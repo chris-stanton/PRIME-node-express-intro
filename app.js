@@ -18,9 +18,13 @@ app.get("/songs", function(req, res){ //does not need a . because it is not refe
 
 app.post("/newSong", function(req, res){
   var newSong = req.body;
+  if (newSong.artist !== "justin bieber") {
   songList.push(newSong);
   console.log(songList);
   res.sendStatus(200);
+} else {
+  res.sendStatus(500);
+}
   });
 
 app.listen(3000);

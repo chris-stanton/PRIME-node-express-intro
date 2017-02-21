@@ -8,7 +8,9 @@ $.ajax({
   success: function(response){
     console.log("response", response);
   }
+  error: function(error){
 
+  }
 });
 }
 $("#addSongButton").on("click", function(){
@@ -27,8 +29,9 @@ $("#addSongButton").on("click", function(){
     sucess: function(response){
       console.log(request);
     }
+    error: function(error){
 
-
+    }
   })
 });
 
