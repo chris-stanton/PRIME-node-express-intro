@@ -19,8 +19,8 @@ $.ajax({
 
 //button click actions
 $("#addSongButton").on("click", function(){
-  var newSongTitle = $("#title").val(); //input field
-  var newSongArtist = $("#artist").val(); //input field
+  var newSongTitle = $("#artist").val(); //input field
+  var newSongArtist = $("#title").val(); //input field
   var newSongObject = {
     title: newSongTitle,
     artist: newSongArtist
